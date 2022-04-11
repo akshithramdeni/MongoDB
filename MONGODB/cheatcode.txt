@@ -1,0 +1,56 @@
+for viewing all the data base
+show dbs;  --- its show the data base which you created
+
+
+creating or changing the name of data base or switching the data base
+use comment -- where comment is the name of new data base
+
+view current db name
+db ----Show you that current db name
+
+delete database
+db.dropDatabase()-----its del the current database
+
+
+
+use dropDatabase() ----del the data
+
+create a collection named 'comment'
+db.createCollection('comments')
+
+
+MONGODB commands for Rows 
+Inserting for one Rows
+db.comments.insert({
+    'name': 'Ramdeni',
+    'bike': 'Yama',
+    'birth_date': 5,
+    'date': new Date()
+})
+
+
+multiple rows  
+db.AKSHITH.insertMany([{
+    'name':'Akshtih',
+    'bike': 'Yama',
+    'birth_date':5
+},
+ {
+    'name':'Nayak',
+    'bike': 'Tvs',
+    'birth_date':12
+},
+{
+    'name':'Ramesh',
+    'bike': 'Apache',
+    'birth_date':4
+},
+{
+    'name':'Arjun',
+    'bike': 'Hero',
+    'birth_date':1
+}])
+
+
+db.AKSHITH.show() it shows you that inserted rows
+db.AKSHITH>show().pretty() it show s All rows in a collections
